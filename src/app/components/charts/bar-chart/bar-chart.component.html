@@ -1,6 +1,6 @@
 <div class="container">
     <div *ngIf="showdata" style="display: block;">
-        <canvas [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
         </canvas>
     </div>
 </div>

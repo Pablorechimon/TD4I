@@ -21,10 +21,10 @@ export class BarChartComponent implements OnInit {
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
   public barChartPlugins = [];
-    public barChartColors: Color[] = [
-    { backgroundColor: 'blue' },
-    { backgroundColor: 'green' }
-  ]
+  //   public barChartColors: Color[] = [
+  //   { backgroundColor: 'blue' },
+  //   { backgroundColor: 'green' }
+  // ]
 
   public barChartData: ChartDataSets[] = [];
 
