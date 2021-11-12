@@ -1,0 +1,11 @@
+<!-- 
+<div>
+    <stream-view *ngFor="let streamer of streams$ | async" [streamer]="streamer">
+    </stream-view>
+</div> -->
+
+<!-- <app-stream-view *ngFor="let streamer of streams$ | async" [streamer]="streamer"></app-stream-view> -->
+
+<app-bar-chart [streams$]='streams$'></app-bar-chart>
+<app-pie-chart></app-pie-chart>
+<app-scatter-chart></app-scatter-chart>
