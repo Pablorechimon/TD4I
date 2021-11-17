@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --PurpleButton:rgb(143, 53, 245);
+    --Purple:rgb(173, 117, 238);
+    --DeepBlack: #222222;
+    --BlackBlack: #111;
+    --White: #d9d9d9;
+    --WhiteWhite: #FFFFFF;
+    --Grey: #e7e7e7;
+    --xiketic: #14000aff;
+    --cyber-grape: #4b3f72ff;
+    --wild-blue-yonder: #9fa4c4ff;
+    --dutch-white: #ddd8b8ff;
+    --beige: #ededd4ff;
+}
+@font-face {
+    font-family: lato;
+    src: url(assets/fonts/DIMITRI_.TTF) format("opentype");
+  }
 
+*{
+    transition: all .5s;
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; position: relative; min-height: 100%;}

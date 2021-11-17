@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  keyRAW: "02b6168f84f24d2590c57dff11614763",
+  client_ID_Twitch: "xnkcunhmnk9uq77nf9poao5zeherd0",
+  keyTwitch: "k7cue395wsytw86ejun339rwcv9qia"
 };
 
 /*

@@ -5,7 +5,21 @@
 </div> -->
 
 <!-- <app-stream-view *ngFor="let streamer of streams$ | async" [streamer]="streamer"></app-stream-view> -->
+<div class="fondo">
+    <div class="contenido-textual">
+        <div class="titulo">
+            <h1>Streamers Habla hispana vs Ingles</h1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="plot"><app-bar-chart [streams$]='streams$'></app-bar-chart></div>
+        <div class="titulo">
+            <h1>Total de Viewers en vivo de habla hispana vs ingles</h1>
+        </div>
+        <div class="plot"><app-pie-chart [streams$]='streams$'></app-pie-chart></div>
+    </div>
+</div>
 
-<app-bar-chart [streams$]='streams$'></app-bar-chart>
-<app-pie-chart></app-pie-chart>
-<app-scatter-chart></app-scatter-chart>
+
+

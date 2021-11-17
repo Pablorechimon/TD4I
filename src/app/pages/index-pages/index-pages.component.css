@@ -1,0 +1,23 @@
+.fondo {
+    background-image: url("/assets/img/Twitch_BackGround.jpg");
+    min-height: 100vh;
+    font-family: 'lato', sans-serif;
+    color: var(--White);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+    font-size: clamp(3.3rem, 3.3rem + 1.3333vw, 4.5rem);
+    line-height: 1;
+    color: var(--WhiteWhite);
+    text-shadow: -2px 0 var(--Purple), 0 2px var(--Purple), 2px 0 var(--Purple), 0 -2px var(--Purple);
+}
+
+p {
+    font-size: clamp(0.3rem, 0.3rem + 4.3333vw, 1.5rem);
+}

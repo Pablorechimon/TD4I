@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 // Material
 // @Angular-Material
@@ -12,7 +14,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestcomponentComponent } from './components/testcomponent/testcomponent.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StreamsComponent } from './components/Streams-Components/streams/streams.component';
 import { StreamsListComponent } from './components/Streams-Components/streams-list/streams-list.component';
@@ -21,6 +22,14 @@ import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/charts/pie-chart/pie-chart.component';
 import { ScatterChartComponent } from './components/charts/scatter-chart/scatter-chart.component';
+import { StreamsPagesComponent } from './pages/streams-pages/streams-pages.component';
+import { GamesPagesComponent } from './pages/games-pages/games-pages.component';
+import { IndexPagesComponent } from './pages/index-pages/index-pages.component';
+import { GamesComponentsComponent } from './components/games-components/games-components.component';
+import { GamesCardComponent } from './components/games-components/games-card/games-card.component';
+import { GenresComponent } from './components/genres/genres.component';
+import { GenresPagesComponent } from './pages/genres-pages/genres-pages.component';
+import { DoughnutChartComponent } from './components/charts/doughnut-chart/doughnut-chart.component';
 
 
 
@@ -30,19 +39,28 @@ import { ScatterChartComponent } from './components/charts/scatter-chart/scatter
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    TestcomponentComponent,
     StreamsComponent,
     StreamsListComponent,
     StreamViewComponent,
     BarChartComponent,
     PieChartComponent,
     ScatterChartComponent,
+    StreamsPagesComponent,
+    GamesPagesComponent,
+    IndexPagesComponent,
+    GamesComponentsComponent,
+    GamesCardComponent,
+    GenresComponent,
+    GenresPagesComponent,
+    DoughnutChartComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CommonModule,
+    MatSidenavModule,
     MatIconModule,
     MatToolbarModule,
     HttpClientModule,

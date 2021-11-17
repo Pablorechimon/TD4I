@@ -9,7 +9,8 @@ import { Observable } from 'rxjs';
 })
 export class StreamsListComponent implements OnInit {
   @Input() streams$: Observable<Stream[]>[] = [];
-  // @Output() viewers_count_data: Stream[] = [];
+  total_viewers_es: number = 0;
+  total_viewers_en: number = 0;
 
   constructor() { }
 
@@ -18,6 +19,12 @@ export class StreamsListComponent implements OnInit {
     //   this.viewers_count_data.push(element);
       // console.log(this.viewers_count_data);
     // }));
+    this.streams$[0].subscribe(data => data.forEach(element => {
+      this.total_viewers_es += element.viewer_count;
+    }));
+    this.streams$[1].subscribe(data => data.forEach(element => {
+      this.total_viewers_en += element.viewer_count;
+    }));
   }
 
 }

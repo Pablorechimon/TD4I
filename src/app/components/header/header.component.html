@@ -1,60 +1,16 @@
-<p>
-    <mat-toolbar>
-        <span>My Application</span>
-    </mat-toolbar>
-</p>
-
-<p>
-    <mat-toolbar>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-        <span>My App</span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-     <mat-icon>share</mat-icon>
-   </button>
-    </mat-toolbar>
-</p>
-
-<p>
-    <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-        <span>My App</span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
-</p>
-
-<p>
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
-            <span>My App</span>
-            <span class="example-spacer"></span>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-        </mat-toolbar-row>
-
-        <mat-toolbar-row>
-            <span>Second Line</span>
-            <span class="example-spacer"></span>
-            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>share</mat-icon>
-        </button>
-        </mat-toolbar-row>
-    </mat-toolbar>
-</p>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [mode]="'push'" [fixedInViewport]="true">
+      <button mat-button (click)="sidenav.toggle()" class="btn bg-primary">Cerrar</button>
+      <ul class="column-list">
+          <li><a class="nav-link" routerLink="/inicio" routerLinkActive="c-secondary-400">Inicio</a></li>
+          <li><a class="nav-link" routerLink="/streams" routerLinkActive="c-secondary-400">Streams</a></li>
+          <li><a class="nav-link" routerLink="/games" routerLinkActive="c-secondary-400">Games</a></li>
+          <li><a class="nav-link" routerLink="/genres" routerLinkActive="c-secondary-400">Generos</a></li>
+      </ul>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <button mat-button (click)="sidenav.toggle()">Menu</button>
+      <h1 class="AppName">TD4I</h1>
+      <img src="assets/img/Twitch_logo.png" alt="Logo de Twitch">
+    </mat-sidenav-content>
+</mat-sidenav-container>

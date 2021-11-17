@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Stream } from '../models/streams';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +21,8 @@ export class FetchDataService {
     
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer k7cue395wsytw86ejun339rwcv9qia`,
-      'client-id': 'xnkcunhmnk9uq77nf9poao5zeherd0'
+      'Authorization': `Bearer ` + environment.keyTwitch,
+      'client-id': environment.client_ID_Twitch
     })
     return this.http.get<Stream[]>("https://api.twitch.tv/helix/streams?language=" + language , { headers: headers })
     .pipe(
