@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Game } from 'src/app/models/game';
 
 @Component({
@@ -8,7 +9,7 @@ import { Game } from 'src/app/models/game';
   styleUrls: ['./games-card.component.css']
 })
 export class GamesCardComponent implements OnInit {
-@Input() game: Game;
+@Input() game: Game ;
 
   constructor() { 
   }

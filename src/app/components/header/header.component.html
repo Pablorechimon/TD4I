@@ -2,15 +2,15 @@
   <mat-sidenav #sidenav [mode]="'push'" [fixedInViewport]="true">
       <button mat-button (click)="sidenav.toggle()" class="btn bg-primary">Cerrar</button>
       <ul class="column-list">
-          <li><a class="nav-link" routerLink="/inicio" routerLinkActive="c-secondary-400">Inicio</a></li>
-          <li><a class="nav-link" routerLink="/streams" routerLinkActive="c-secondary-400">Streams</a></li>
-          <li><a class="nav-link" routerLink="/games" routerLinkActive="c-secondary-400">Games</a></li>
-          <li><a class="nav-link" routerLink="/genres" routerLinkActive="c-secondary-400">Generos</a></li>
+          <li><a (click)="sidenav.toggle()" class="nav-link" routerLink="/inicio" routerLinkActive="c-secondary-400">Inicio</a></li>
+          <li><a (click)="sidenav.toggle()" class="nav-link" routerLink="/games" routerLinkActive="c-secondary-400">Games</a></li>
+          <li><a (click)="sidenav.toggle()" class="nav-link" routerLink="/genres" routerLinkActive="c-secondary-400">Generos</a></li>
+          <li><a (click)="sidenav.toggle()" class="nav-link" routerLink="/streams" routerLinkActive="c-secondary-400">Streams</a></li>
       </ul>
   </mat-sidenav>
   <mat-sidenav-content>
       <button mat-button (click)="sidenav.toggle()">Menu</button>
       <h1 class="AppName">TD4I</h1>
-      <img src="assets/img/Twitch_logo.png" alt="Logo de Twitch">
+      <a href="https://www.twitch.tv/" target="_blank"><img src="assets/img/Twitch_logo.png" alt="Logo de Twitch"></a>
     </mat-sidenav-content>
 </mat-sidenav-container>

@@ -22,4 +22,4 @@
     transition: all .5s;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; position: relative; min-height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; position: relative; min-height: 100%; background-color: var(--DeepBlack);}

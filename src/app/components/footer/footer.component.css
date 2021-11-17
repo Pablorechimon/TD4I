@@ -9,6 +9,8 @@
 
 footer {
     background-color: var(--BlackBlack);
+    box-shadow: -1px 0px 12px 0px var(--Purple) !important;
+    border: 1px solid var(--DeepBlack);
 }
 
 footer .content {
@@ -39,6 +41,7 @@ footer .content .topic {
 
 footer .content p {
     text-align: justify;
+    font-size: 18px;
 }
 
 footer .content .lower .topic {
