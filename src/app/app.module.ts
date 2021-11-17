@@ -30,6 +30,7 @@ import { GamesCardComponent } from './components/games-components/games-card/gam
 import { GenresComponent } from './components/genres/genres.component';
 import { GenresPagesComponent } from './pages/genres-pages/genres-pages.component';
 import { DoughnutChartComponent } from './components/charts/doughnut-chart/doughnut-chart.component';
+import { GameDetailComponent } from './components/games-components/game-detail/game-detail.component';
 
 
 
@@ -53,6 +54,7 @@ import { DoughnutChartComponent } from './components/charts/doughnut-chart/dough
     GenresComponent,
     GenresPagesComponent,
     DoughnutChartComponent,
+    GameDetailComponent,
 
   ],
   imports: [

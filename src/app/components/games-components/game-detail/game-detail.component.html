@@ -1,0 +1,10 @@
+<div class="vistadetallada">
+    <h1>{{game.name}}</h1>
+    <img [src]="game.background_image" alt="">
+    <div class="descripcion">
+        <p>{{game.description}}</p>
+    </div>
+    <h2>Metacritic Score: {{game.metacritic}}</h2>
+    <a [href]="game.metacritic_url" target="_blank">Metacritic Review</a>
+    <button routerLink="/games" routerLinkActive="c-secondary-400"> Volver</button>
+</div>

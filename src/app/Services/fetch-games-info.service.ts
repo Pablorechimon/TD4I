@@ -30,6 +30,10 @@ export class FetchGamesInfoService {
     return this.get(this.gamesEndpoint)
   }
 
+  getGamesInfoByID(id: number):Observable<any>{
+    return this.get(this.gamesEndpoint + "/" + id.toString())
+  }
+
   getGamesGenders():Observable<any>{
     return this.get(this.genresEndpoint)
   }

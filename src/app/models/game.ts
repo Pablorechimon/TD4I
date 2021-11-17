@@ -1,5 +1,5 @@
 export interface Game{
-    id: number;
+    id: string;
     name: string;
     dominant_color: string;
     short_screenshots: any[];
